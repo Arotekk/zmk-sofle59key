@@ -42,12 +42,12 @@
 
         eckigAuf {
             bindings = <&kp LA(LC(NUMBER_7))>;
-            key-positions = <54 25>;
+            key-positions = <54 27>;
         };
 
         geschweiftAuf {
             bindings = <&kp LA(LC(NUMBER_8))>;
-            key-positions = <54 27>;
+            key-positions = <54 25>;
         };
 
         KlammerZu {
@@ -62,12 +62,12 @@
 
         eckigZu {
             bindings = <&kp LA(LC(NUMBER_0))>;
-            key-positions = <55 34>;
+            key-positions = <55 32>;
         };
 
         geschweiftZu {
             bindings = <&kp LA(LC(NUMBER_9))>;
-            key-positions = <32 55>;
+            key-positions = <55 34>;
         };
     };
 
