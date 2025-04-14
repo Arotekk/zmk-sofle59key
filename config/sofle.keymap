@@ -72,18 +72,30 @@
     };
 
     macros {
-        Vills: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LC(H) &kp Q &kp Q>;
-            label = "NEW_MACRO";
-        };
-
         Ships: Ships {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(D) &kp Q &kp Q>;
+            bindings =
+                <&kp LC(T)>,
+                <&macro_wait_time 50>,
+                <&kp Q>,
+                <&macro_wait_time 50>,
+                <&kp Q>;
+
             label = "SHIPS";
+        };
+
+        Vills: Vills {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(H)>,
+                <&macro_wait_time 50>,
+                <&kp Q>,
+                <&macro_wait_time 50>,
+                <&kp Q>;
+
+            label = "VILLS";
         };
     };
 
