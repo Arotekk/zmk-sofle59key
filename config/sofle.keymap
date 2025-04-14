@@ -14,6 +14,14 @@
 #define RAISE 2
 #define ADJUST 3
 
+&mt {
+    tapping-term-ms = <150>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+
+&lt { tapping-term-ms = <150>; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -22,19 +30,44 @@
     combos {
         compatible = "zmk,combos";
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <32 31>;
+        KlammerAuf {
+            bindings = <&kp LS(NUMBER_8)>;
+            key-positions = <54 28>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <27 33>;
+        kleiner {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <54 26>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <25 41>;
+        eckigAuf {
+            bindings = <&kp LA(LC(NUMBER_7))>;
+            key-positions = <54 25>;
+        };
+
+        geschweiftAuf {
+            bindings = <&kp LA(LC(NUMBER_8))>;
+            key-positions = <54 27>;
+        };
+
+        KlammerZu {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <55 31>;
+        };
+
+        groeser {
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
+            key-positions = <55 33>;
+        };
+
+        eckigZu {
+            bindings = <&kp LA(LC(NUMBER_0))>;
+            key-positions = <55 34>;
+        };
+
+        geschweiftZu {
+            bindings = <&kp LA(LC(NUMBER_9))>;
+            key-positions = <32 55>;
         };
     };
 
